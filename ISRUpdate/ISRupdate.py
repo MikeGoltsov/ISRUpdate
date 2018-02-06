@@ -8,6 +8,9 @@ import re
 NewIOSImage = "c2900-universalk9-mz.SPA.156-3.M3a.bin";
 NewIOSImageMD5 = "357bbcd419fc068c3833628274f2f1a1";
 FtpPatch = "ftp://10.27.1.117/";
+
+FileWithIP = "Update.txt";
+
             
 USER = "user";
 PASSWORD = "pass";
@@ -133,7 +136,7 @@ if __name__ == '__main__':
     devices=[];
     devcount=0;
     
-    f = open('UPDATE.txt');
+    f = open(FileWithIp);
     DEVICES_IP = f.read().rstrip().split('\n'); 
     f.close();
     
